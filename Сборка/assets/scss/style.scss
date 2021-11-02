@@ -1,0 +1,95 @@
+// Variable
+@import "_vars";
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0 0 10px;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+	font-family: "PT Sans", sans-serif;
+	background-color: #fff;
+
+	font-size: 1rem;
+	line-height: 1.4;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&.no-scroll,
+	&.show-nav {
+		overflow: hidden;
+	}
+}
+
+.img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+// helpers
+.text-center {
+	text-align: center;
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+// blocks
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/request-form";
+@import "blocks/btn";
+@import "blocks/services";
+@import "blocks/section";
+@import "blocks/clients";
+@import "blocks/reviews";
+@import "blocks/benefits";
+@import "blocks/team";
+@import "blocks/mission";
+@import "blocks/news";
+@import "blocks/footer";
+@import "blocks/modal-request";
+@import "blocks/blog";
+@import "blocks/privacy";
+
+// Media
+@import "blocks/media";

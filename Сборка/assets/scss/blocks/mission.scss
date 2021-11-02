@@ -1,0 +1,66 @@
+// misson
+.mission__big-title {
+	font-family: 'Lato', sans-serif;
+	font-size: 6rem;
+	font-weight: 900;
+
+	text-align: center;
+	line-height: 1;
+	color: rgba($black, .05);
+	text-transform: uppercase;
+
+	// position: absolute;
+ 
+}
+
+.mission {
+	margin-bottom: 30px;
+	padding: 60px 30px;
+	background-color: #fff;
+
+	border-radius: 5px;
+	box-shadow: 0 5px 30px rgba(0, 0, 0, .16);
+
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	position: relative;
+	top: -23px;
+	// margin-top: -23px;
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: 41.66666%;
+		height: 2px;
+
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		z-index: 1;	
+	}
+
+	&:before {
+		background-color: $blue;
+		right: 50%;
+	}
+
+	&:after {
+		background-color: #FE0101;
+		left: 50%;
+	}
+}
+
+.mission__title {
+	margin-bottom: 5px;
+	font-size: 2rem;
+	font-weight: 700;
+
+	color: $blue;
+	line-height: 1.2;
+}
+
+.mission__subtitle {
+	font-size: 1.4rem;
+	color: #585858;
+}

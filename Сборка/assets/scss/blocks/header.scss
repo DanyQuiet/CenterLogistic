@@ -1,0 +1,149 @@
+
+ .header {
+ 	background-color: rgba(0, 0, 0, .2);
+
+ 	position: fixed;
+ 	top: 0;
+ 	left: 0;
+ 	z-index: 1000;
+ 	width: 100%;
+
+ 	transition: background .2s linear;
+ }
+
+ .header--dark,
+ body.show-nav .header  {
+ 	background-color: rgba(0, 0, 0, .9);
+ }
+
+ .header__inner {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	height: 85px;
+ }
+
+ .header__logo {
+  color: $white;
+  text-decoration: none;
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+ }
+
+ .header__logo--black {
+  color: $black;
+ }
+
+ .header__logo-text {
+  margin-left: 11px;
+  font-size: 1rem;
+  font-weight: 700;
+
+  position: relative;
+  top: 2px;
+ }
+
+
+ .nav {
+ 	font-size: 1rem;
+ 	display: flex;
+ 	height: 100%;
+ 
+}
+
+
+ .nav__link {
+ 	display: flex;
+ 	align-items: center;
+ 	padding: 0 15px;
+
+ 	color: #fff;
+ 	text-decoration: none;
+
+  transition: background .2s linear;
+
+ 	&:not(.active):hover {
+ 		text-decoration: underline;
+ 	}
+ }
+
+ .nav__link.active  {
+ 	background-color: #004AF2;
+
+ }
+
+
+ // Burger
+  .burger {
+    position: relative;
+    height: 23px;
+    width: 30px;
+
+ 	  display: none;
+ 	  padding: 0;
+ 	  background: #000;
+
+    border: 0;
+    font-size: 0;
+    color: transparent;
+
+    &.active .burger__line:nth-child(1),
+    &.active .burger__line:nth-child(3) {
+      width: 0;
+    }
+
+
+     &.active .burger__line:nth-child(2),
+     &.active .burger__line:nth-child(4) {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform-origin: center;
+    }
+
+     &.active .burger__line:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+     &.active .burger__line:nth-child(4) {
+       transform: rotate(-45deg);
+    }
+
+ 	  
+
+    &__line {
+      width: 30px;
+      height: 2px;
+      display: block;
+
+      margin: 3px 0;
+      background-color: #fff;
+      transition: transform .2s ease-out;
+
+        &:nth-child(1) {
+           width: 20px;
+           margin-left: auto;
+
+      }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+           transform-origin: right;
+           transition: width .2 ease-out;
+      }
+
+      
+    }
+
+
+    &:focus {
+      outline: none;
+    }
+ }
+
+ 
+
+

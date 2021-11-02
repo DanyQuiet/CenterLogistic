@@ -1,0 +1,51 @@
+// clients
+
+.clients {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.clients__logos {
+	width: 60%;
+}
+
+.clients__reviews {
+	width: 40%;
+	// overflow: hidden;
+}
+
+.clients__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	li {
+		margin-right: 50px;
+		margin-bottom: 40px;
+	}
+}
+
+.clients__love {
+	display: inline-block;
+	background: url("../images/heart.svg") no-repeat left 19px top;
+	color: #464646;
+
+	font-size: 1.2rem;
+	margin-left: 40px;
+	min-height: 47px;
+
+	padding-top: 5px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-pagination-bullet-active {
+	padding: 6px;
+}

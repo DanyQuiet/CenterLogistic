@@ -1,0 +1,104 @@
+// reviews
+
+.reviews {
+	position: relative;
+	overflow: hidden;
+
+	// background: url("../images/ajax-loader.gif") no-repeat center;
+
+	&.slick-initialized {
+		background: none;
+		height: auto;
+	}
+
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		width: 10px;
+		height: 100%;
+
+		position: absolute;
+		top: 0;
+		z-index: 3;
+	}
+
+	&:before {
+		left: 0;
+		background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+	}
+
+	&:after {
+		right: 0;
+		background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+	}
+
+	&__item {
+		padding: 13px 10px;
+	}
+}
+
+.reviews__header {
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+
+	position: relative;
+	z-index: 2;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 92px;
+		height: 126px;
+
+		background: url("../images/lines/lines.svg") no-repeat;
+		position: absolute;
+		top: -13px;
+		left: 2px;
+		z-index: 1;
+	}
+}
+
+.reviews__header-content {
+	flex-grow: 1;
+	padding-left: 20px;
+	font-family: "Lato", sans-serif;
+}
+
+.reviews__photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 5px solid $white;
+
+	box-shadow: 0 3px 6px rgba($black, 0.16);
+
+	position: relative;
+	z-index: 2;
+}
+
+.reviews__name {
+	font-size: 1.2rem;
+	color: $black;
+	font-weight: 900;
+}
+
+.reviews__company {
+	color: $black;
+	font-size: 1rem;
+}
+
+.rewiews__content {
+	color: #585858;
+	line-height: 1.8;
+	font-size: 1rem;
+
+	p {
+		margin-bottom: 20px;
+
+		&:first-line {
+			text-indent: 20px;
+		}
+	}
+}

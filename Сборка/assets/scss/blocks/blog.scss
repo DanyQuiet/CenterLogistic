@@ -1,0 +1,15 @@
+.newsblog {
+	margin-bottom: 30px;
+	height: 350px;
+	background:  #000 url('../images/newsblog/news-intro.jpg') no-repeat center;
+	background-size: cover;
+}
+
+// Main
+.main {
+	display: flex;
+ }
+
+.main__col {
+	width: 50%;
+}

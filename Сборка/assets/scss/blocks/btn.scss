@@ -1,0 +1,66 @@
+// btn
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	overflow: hidden;
+
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.1rem;
+	color: $white;
+
+	font-weight: 700;
+	text-align: center;
+	padding: 15px 45px;
+
+	background: grey;
+	border: 0;
+	cursor: pointer;
+
+	line-height: 1.1;
+	border-radius: 5px;
+	text-decoration: none;
+
+	transition: background-size .2s linear;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		background-color: #000;
+		opacity: 0;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+
+		transition: opacity .2s linear;
+	}
+
+	span {
+		position: relative;
+		z-index: 2;
+	}
+
+	&:hover:before {
+		opacity: .3;
+	}
+}
+
+.btn--orange {
+	background-image: linear-gradient(to right, #FF903E, #FF2C2C);
+
+}
+
+
+.btn--block {
+	display: block;
+	width: 100%;
+}
+
+.btn-shadow {
+	box-shadow: 0 10px 15px rgba($black, .2);
+}
